@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sorry Mimi️</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#000000,#2b0018,#4a0028);
+font-family:Arial;
+color:white;
+overflow:hidden;
+}
+
+
+.box{
+text-align:center;
+}
+
+
+h1{
+font-size:80px;
+letter-spacing:12px;
+cursor:pointer;
+animation:glow 2s infinite;
+transition:.5s;
+}
+
+
+h1:hover{
+transform:scale(1.15);
+}
+
+
+@keyframes glow{
+
+0%,100%{
+text-shadow:0 0 15px white;
+}
+
+50%{
+text-shadow:0 0 40px #ff6fae;
+}
+
+}
+
+
+p{
+margin-top:35px;
+font-size:22px;
+line-height:1.7;
+opacity:0;
+transform:translateY(30px);
+transition:1s;
+}
+
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="box">
+
+<h1 onclick="show()">SORRY</h1>
+
+
+<p id="msg">
+
+Dear MIMI <br><br>
+
+I know I made a mistake...<br>
+I never wanted to hurt you.<br><br>
+
+I'm really sorry <br>
+I hope you can forgive me <br>
+
+
+I promise I won't say a word, no matter how much you tease.<br>
+Once again "SORRY"
+</p>
+
+
+</div>
+
+
+<script>
+
+function show(){
+
+document.getElementById("msg")
+.classList.add("show");
+
+}
+
+</script>
+
+
+</body>
+</html>
